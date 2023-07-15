@@ -11,6 +11,8 @@ public class DesktopLauncher  {
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
 		config.setForegroundFPS(60);
 		config.setTitle("TankWar");
+		config.setWindowedMode(608, 368);
+		config.useVsync(true);
 		new Lwjgl3Application(new MyTank(), config);
 	}
 }
